@@ -17,6 +17,7 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
     <flow name="dataloaderioFlow1">
         <sfdc:subscribe-topic config-ref="Salesforce__Basic_Authentication" topic="/ContactTopic" doc:name="Salesforce (Streaming)"/>
         <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
         <set-variable variableName="datatotweet" value="#[payload]" doc:name="Variable"/>
         <db:insert config-ref="MySQL_Configuration1" doc:name="Database">
             <db:parameterized-query><![CDATA[INSERT INTO customer (first_name, last_name, email, department) VALUES
