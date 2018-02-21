@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "Salesforce__Basic_Authentication",
+            "typeId": "Contact"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "test"
+        }
+    },
+    "id": "21e98799-3e09-47b2-9dd0-76ce64d88e2f",
+    "version": "5.2.0.0"
+}
